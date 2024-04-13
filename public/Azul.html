@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript">
+        function windowPane_Click(x,y){
+            alert (x,y);
+        }        
+    </script>
+    <style>
+        body{
+            position:absolute;
+            background-color:grey;
+            left:30px;
+            top:15px;
+            text-align:center;
+        }
+        .tile-blue{
+            background-color:blue;
+            color:blue;
+        }
+        .tile-Orange{
+            background-color:Orange;
+            color:Orange;
+        }
+         .tile-Red{
+            background-color:Red;
+            color:red;
+        }
+         .tile-Black{
+            background-color:Black;
+            color:black;
+        }
+         .tile-White{
+            background-color:White;
+            color:white;
+        }
+        .arrow{
+            position:relitive;
+            border-top: 35px solid transparent;
+	        border-left: 30px solid black;
+	        border-bottom: 35px solid transparent;
+            top:-40px;
+         }
+        .one{
+            position:absolute;
+            top:370px;
+            left:560px;
+        }
+        .two{
+            position:absolute;
+            top:480px;
+            left:560px;
+        }
+        .three{
+            position:absolute;
+            top:590px;
+            left:560px;
+        }
+        .fore{
+            position:absolute;
+            top:700px;
+            left:560px;
+        }
+        .five{
+            position:absolute;
+            top:810px;
+            left:560px;
+        }
+        .border1{
+            width:1200px;
+            height:1100px;
+            position:absolute;
+            border:black 10px;
+            border-style:double;
+            left:-25px;
+            top:-20px;
+        }
+        .border2{
+            width:1200px;
+            height:1100px;
+            position:absolute;
+            border:black 10px;
+            border-style:dotted;
+            left:-25px;
+            top:-20px;
+        }
+         .boxes td{
+            position:relitive;
+            width: 50px;
+            height: 50px;
+            border:2px solid black;
+            text-align: center;
+        }
+        
+        .Number5{
+            background-color:yellow;  
+        }
+        
+        .window2 td{
+            position:relative;
+            width:100px;
+            height:100px;
+            top:0px;
+            left:620px;
+            border:2px double black;
+        }
+        
+        .window3 td{
+            position:relitive;
+            width:100px;
+            height:100px;
+            float:right;
+            border:2px double black;
+            margin-right:2px;
+        }
+        .window3{
+            position:absolute;
+            top:350px;
+        }
+        .window-broken td{
+            border:2px solid black;
+            width:110px;
+            height:120px;
+            border-top:solid transparent;
+        }
+        .window-broken{
+            position:absolute;
+            top:940px;
+        }
+        .azul-logo{
+            position:absolute;
+            top:350px;
+            left:-70px;
+            width:450px;
+        }
+        .oval td{
+            position:absolute;
+            width:90px;
+            height:50px;
+            border-radius: 50%;
+            border-top:solid black;
+            border-right:solid black;
+            border-bottom:solid transparent;
+            border-left:solid black;
+            top:;
+        }
+        .oval1{
+            left:10px;
+            
+        }
+        .oval2{
+            left:125px;
+        }
+        .oval3{
+            left:250px;
+        }
+        .oval4{
+            left:365px;
+        }
+        .oval5{
+            left:480px;
+        }
+        .oval6{
+            left:600px;
+        }
+        .oval7{
+            left:720px;
+        }
+        .extra{
+            position:absolute;
+            width:340px;
+            height:180px;
+            background-color:rgb(0,140,270);
+            border-radius: 10%;
+            border-top:10px solid black;
+            border-left:10px solid black;
+            border-bottom:10px solid transparent;
+            border-right:10px solid transparent;
+            top:890px;
+            left:825px;
+        }
+        .extra-row{
+            position:absolute;
+            top:930px;
+            left:860px;
+            border:1px solid black;
+        }
+        .extra-column{
+            rotate:90deg;
+            position:absolute;
+            top:990px;
+            left:1000px;
+        }
+        .extra-row td{
+            width:20px;
+            height:20px;
+            border:2px solid black;
+        }
+        .extra2{
+            
+        }
+        .extra-column td{
+            width:20px;
+            height:20px;
+            border:2px solid black;
+            rotate:-90deg;
+        }
+        .extra7{
+            
+        }
+    </style>
+    </head>
+    <body>
+    <div class="arrow one">
+    </div>
+    <div class="arrow two">
+    </div>
+    <div class="arrow three">
+    </div>
+    <div class="arrow fore">
+    </div>
+    <div class="arrow five">
+    </div>
+    <div class=border1>
+    </div>
+    <div class=border2>
+    </div>
+    <div class="extra">
+    </div>
+     <table class="boxes">
+        <tr>
+            <td class="Number5">
+                0
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                3
+            </td>
+            <td>
+                4
+            </td>
+            <td class="Number5">
+                5
+            </td>
+            <td>
+                6
+            </td>
+            <td>
+                7
+            </td>
+            <td>
+                8
+            </td>
+            <td>
+                9
+            </td>
+            <td class="Number5">
+                10
+            </td>
+            <td>
+                11
+            </td>
+            <td>
+                12
+            </td>
+            <td>
+                13
+            </td>
+            <td>
+                14
+            </td>
+            <td class="Number5">
+                15
+            </td>
+            <td>
+                16
+            </td>
+            <td>
+                17
+            </td>
+            <td>
+                18
+            </td>
+            <td>
+                19
+            </td>
+            <td class="Number5">
+                20
+            </td>
+        </tr>
+         <tr>
+            <td>
+                21
+            </td>
+            <td>
+                22
+            </td>
+            <td>
+                23
+            </td>
+            <td>
+                24
+            </td>
+            <td class="Number5">
+                25
+            </td>
+            <td>
+                26
+            </td>
+            <td>
+                27
+            </td>
+            <td>
+                28
+            </td>
+            <td>
+                29
+            </td>
+            <td class="Number5">
+                30
+            </td>
+            <td>
+                31
+            </td>
+            <td>
+                32
+            </td>
+            <td>
+                33
+            </td>
+            <td>
+                34
+            </td>
+            <td class="Number5">
+                35
+            </td>
+            <td>
+                36
+            </td>
+            <td>
+                37
+            </td>
+            <td>
+                38
+            </td>
+            <td>
+                39
+            </td>
+            <td class="Number5">
+                40
+            </td>
+        </tr>
+         <tr>
+            <td>
+                41
+            </td>
+            <td>
+                42
+            </td>
+            <td>
+                43
+            </td>
+            <td>
+                44
+            </td>
+            <td class="Number5">
+                45
+            </td>
+            <td>
+                46
+            </td>
+            <td>
+                47
+            </td>
+            <td>
+                48
+            </td>
+            <td>
+                49
+            </td>
+            <td class="Number5">
+                50
+            </td>
+            <td>
+                51
+            </td>
+            <td>
+                52
+            </td>
+            <td>
+                53
+            </td>
+            <td>
+                54
+            </td>
+            <td class="Number5">
+                55
+            </td>
+            <td>
+                56
+            </td>
+            <td>
+                57
+            </td>
+            <td>
+                58
+            </td>
+            <td>
+                59
+            </td>
+            <td class="Number5">
+                60
+            </td>
+        </tr>
+         <tr>
+            <td>
+                61
+            </td>
+            <td>
+                62
+            </td>
+            <td>
+                63
+            </td>
+            <td>
+                64
+            </td>
+            <td class="Number5">
+                65
+            </td>
+            <td>
+                66
+            </td>
+            <td>
+                67
+            </td>
+            <td>
+                68
+            </td>
+            <td>
+                69
+            </td>
+            <td class="Number5">
+                70
+            </td>
+            <td>
+                71
+            </td>
+            <td>
+                72
+            </td>
+            <td>
+                73
+            </td>
+            <td>
+                74
+            </td>
+            <td class="Number5">
+                75
+            </td>
+            <td>
+                76
+            </td>
+            <td>
+                77
+            </td>
+            <td>
+                78
+            </td>
+            <td>
+                79
+            </td>
+            <td class="Number5">
+                80
+            </td>
+        </tr>
+         <tr>
+            <td>
+                81
+            </td>
+            <td>
+                82
+            </td>
+            <td>
+                83
+            </td>
+            <td>
+                84
+            </td>
+            <td class="Number5">
+                85
+            </td>
+            <td>
+                86
+            </td>
+            <td>
+                87
+            </td>
+            <td>
+                88
+            </td>
+            <td>
+                89
+            </td>
+            <td class="Number5">
+                90
+            </td>
+            <td>
+                91
+            </td>
+            <td>
+                92
+            </td>
+            <td>
+                93
+            </td>
+            <td>
+                94
+            </td>
+            <td class="Number5">
+                95
+            </td>
+            <td>
+                96
+            </td>
+            <td>
+                97
+            </td>
+            <td>
+                98
+            </td>
+            <td>
+                99
+            </td>
+            <td class="Number5">
+                100
+            </td>
+        </tr>
+    </table>
+    <table class="window2">
+        <tr>
+            <td class="tile-blue" onclick="windowPane_Click(0,0)">
+            </td>
+            <td class="tile-Orange">
+            </td>
+            <td class="tile-Red">
+            </td>
+            <td class="tile-Black">
+            </td>
+            <td class="tile-White">
+            </td>
+        </tr>
+        <tr>
+             <td class="tile-White">
+            </td>
+            <td class="tile-blue">
+            </td>
+            <td class="tile-Orange">
+            </td>
+            <td class="tile-Red">
+            </td>
+            <td class="tile-Black">
+            </td>
+        </tr>
+         <tr>
+            <td class="tile-Black">
+            </td>
+             <td class="tile-White">
+            </td>
+            <td class="tile-blue">
+            </td>
+            <td class="tile-Orange">
+            </td>
+            <td class="tile-Red">
+            </td>
+        </tr>
+        <tr>
+            <td class="tile-Red">
+            </td>
+            <td class="tile-Black">
+            </td>
+             <td class="tile-White">
+            </td>
+            <td class="tile-blue">
+            </td>
+            <td class="tile-Orange">
+            </td>
+        </tr>
+        <tr>
+            <td class="tile-Orange">
+            </td>
+            <td class="tile-Red">
+            </td>
+            <td class="tile-Black">
+            </td>
+             <td class="tile-White">
+            </td>
+            <td class="tile-blue">
+            </td>
+        </tr>
+    </table>
+    <table  class="window3">
+         <tr>
+             <td>
+            </td>
+         </tr>
+         <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+         </tr>
+         <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+         </tr>
+         <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+         </tr>
+          <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+    <table class="window-broken">
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+    <table class="oval">
+        <tr>
+            <td class="oval1">
+                -1
+            </td>
+            <td class="oval2">
+                -1
+            </td>
+            <td class="oval3">
+                -2
+            </td>
+            <td class="oval4">
+                -2
+            </td>
+            <td class="oval5">
+                -2
+            </td>
+            <td class="oval6">
+                -3
+            </td>
+            <td class="oval7">
+                -3
+            </td>
+        </tr>
+    </table>
+    <table class="extra-row">
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td class="extra2">
+                +2
+            </td>
+        </tr>
+    </table>
+    <table class="extra-column">
+        <tr>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+            <td class="extra7">
+                +7
+            </td>
+        </tr>
+    </table>
+    <img src="azul2.png" alt="azul logo" class="azul-logo">
+    </body>
+</html>
