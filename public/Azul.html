@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <script type="text/javascript">
-        function windowPane_Click(x,y){
-            alert (x,y);
-        }        
-    </script>
+    <script type="text/javascript" src="main.js"></script>
     <style>
         body{
             position:absolute;
@@ -17,6 +13,17 @@
         .tile-blue{
             background-color:blue;
             color:blue;
+        }
+        .tile-blue-full{
+            position: absolute;
+            background-color: rgb(173, 216, 230);
+            width:90px;
+            height:90px;
+            border-radius: 100%;
+            left:625px;
+            top:355px;
+            z-index: 2;
+            border: 5px solid rgb(47,59,226);
         }
         .tile-Orange{
             background-color:Orange;
@@ -142,7 +149,6 @@
             border-right:solid black;
             border-bottom:solid transparent;
             border-left:solid black;
-            top:;
         }
         .oval1{
             left:10px;
@@ -226,6 +232,8 @@
     <div class=border2>
     </div>
     <div class="extra">
+    </div>
+    <div class="tile-blue-full">
     </div>
      <table class="boxes">
         <tr>
