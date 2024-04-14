@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type Tile int
 type Pattern []Tile // cannot contain FirstPlayer
 type Window []Tile  // cannot contain FirstPlayer
@@ -22,6 +20,7 @@ type State struct {
 	Factories    []Factory
 	Pot
 	Bag
+	Message string
 }
 
 const (
@@ -97,15 +96,4 @@ func (f Factory) At(index int) Tile {
 		return Empty
 	}
 	return f[index]
-}
-
-func main() {
-	fmt.Printf("The Blue tile is: %s\n", Blue)
-	fmt.Printf("The Red tile is: %s\n", Red)
-	fmt.Printf("The FirstPlayer tile is: %s\n", FirstPlayer)
-
-	window := NewWindow()
-	window.Set(2, 2, Blue)
-
-	fmt.Printf("The tile at (2,2) is: %s\n", window.At(2, 2))
 }
